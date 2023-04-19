@@ -1,0 +1,17 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 6rem;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.btn-primary {
+    display: flex;
+    justify-content: center;
+}
