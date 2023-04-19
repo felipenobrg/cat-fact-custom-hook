@@ -6,11 +6,15 @@ export const Cat = () => {
     "https://cdn2.thecatapi.com/images/4io.gif"
   );
   const { data, isLoading, refetch } = useGetCat();
-  if (isLoading) return <h1>Loading...</h1>;
+  if (isLoading) return (
+    <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+    </div>
+  )
 
   const handleRefetch = () => {
     refetch();
-    setImageUrl(image);
+    setImageUrl(imageUrl);
   };
 
   return (
